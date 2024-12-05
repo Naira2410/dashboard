@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(5, 5, 37);
+    display: flex;
+}
+/*  menu---------------------------------*/
+.img-profile{
+    width: 50px;
+    height:50px ;
+    border-radius: 50%;
+    overflow: hidden; /* اي حاجة تخرج برا حدود الدايرة اعمل اخفاء*/
+    border: 3px solid;
+    flex-shrink: 0;
+}
+.img-profile img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.profile h2{
+    font-size: 20px;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width:260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: rgba(34, 10, 245, 0.808);
+}
+ul li a i{
+    font-size: 25px;
+   
+}
+/*content------------------------------------*/
+.content{
+    margin: 10px;
+    width: 100%;
+}
+/*title-info------------*/
+.title-info{
+    background-color: rgba(36, 36, 204, 0.63);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+    border-radius: 7px;
+
+}
+/*data-info---------------------------*/
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    background-color: rgba(4, 4, 83, 0.37);
+    height:150px;
+    flex-basis:150px ;/* بتعمل نفس خواص العرض*/
+    flex-grow: 1;/* لو ف مساحة الكلام هينمو ف البوكس لو مفيش مساحة  هيعمل راب */
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+.box i{
+    font-size: 40px;
+}
+.data{
+    text-align: center;
+}
+.data span{
+    font-size: 30px;
+}
+/* table-------------------------*/
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 7px;
+}
+td,th{
+    background-color: rgba(59, 59, 68, 0.63);
+    height: 40px;
+    border-radius: 8px;
+
+}
+th{
+   background-color: rgba(36, 36, 204, 0.63); 
+}
+th:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+  .Price,.count{
+        padding: 7px;
+      border-radius: 6px;
+    }
+    .Price{
+        background-color: green;
+    }
+    .count{
+        background-color: antiquewhite;
+        color: black;
+    }
+
+        
